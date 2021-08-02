@@ -67,6 +67,13 @@ nav .active {
 .featured_main p {
   color: #000;
 }
+.services {
+  font-size: 30px;
+  text-align: center;
+}
+.services li {
+  list-style-type: none;
+}
 .featured_main .btn {
   text-decoration: none;
   background-color: #fff;
@@ -78,6 +85,45 @@ nav .active {
   text-transform: uppercase;
   font-weight: bold;
   float: right;
+}
+.featured_main .btn-2 {
+  text-decoration: none;
+  background-color: #000;
+  color: white;
+  border: 2px solid #000;
+  border-radius: 50em;
+  padding: 15px 30px;
+  margin: 0 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 20px;
+  padding: 20px;
+}
+.featured_main .btn-2:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #000;
+}
+.featured_main .btn-1 {
+  text-decoration: none;
+  background-color: #000;
+  color: white;
+  border: 2px solid #000;
+  border-radius: 50em;
+  padding: 15px 30px;
+  margin: 0 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  float: right;
+}
+.featured_main .btn-1:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #000;
 }
 .featured_profile {
   grid-area: featured_profile;
@@ -111,7 +157,93 @@ nav .active {
 .copyright img {
   width: 85px;
 }
+.section-4 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #000;
+}
+.section-heading {
+  color: white;
+  font-size: 30px;
+}
+.form-container {
+  height: 85vh;
+  width: 90%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0.5rem 0.5rem 0.6rem #fff, -0.2rem -0.2rem 0.6rem #fff;
+  border-radius: 0.5rem;
+  perspective: 100rem;
+}
+.form-img {
+  width: 20rem;
+  background-color: #000;
+  padding: 5rem;
+  margin: 5rem;
+  opacity: 0.8rem;
+  box-shadow: 0.5rem;
+  border-radius: 0.5rem;
+  transform: rotateY(20deg);
+  transition: all 0.5s;
+  object-fit: cover;
+}
 
+.form-img:hover {
+  transform: translateY(-2rem) rotateY(20deg);
+}
+.contact-form {
+  width: 25rem;
+  height: 30rem;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  border-radius: 0.5rem;
+  padding: 5rem;
+  transform: rotateY(-20deg);
+  transition: all 0.5s;
+}
+.contact-form:hover {
+  transform: translateY(-2rem) rotateY(-20deg);
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: inset 0.1rem 0.1rem 0.2rem #ddd, inset -0.1rem -0.1rem 0.2rem #ddd;
+}
+.contact-form textarea {
+  max-height: 15rem;
+  min-height: 10rem;
+  max-width: 100%;
+  min-width: 70%;
+}
+.contact-form input[type="submit"] {
+  background-color: #fff;
+  color: #000;
+  font-weight: bolder;
+  letter-spacing: 0.5rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.5s;
+}
+.contact-form input[type="submit"]:hover {
+  background-color: #000;
+  color: white;
+}
+
+/* end of section 4 */
 @media screen and (max-width: 480px) {
   #site_wrap {
     grid-template-areas:
